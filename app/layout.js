@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Aurora from '@/components/Aurora';
+import Footer from "@/components/Footer";
   
 
 const geistSans = Geist({
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
   speed={0.5}
 />
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );
